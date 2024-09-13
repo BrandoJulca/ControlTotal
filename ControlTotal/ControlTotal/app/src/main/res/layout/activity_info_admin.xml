@@ -5,108 +5,82 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.slideshow.InfoAdmin">
+    tools:context=".ui.slideshow.InfoAdmin"
+    android:background="@color/white"
+    tools:ignore="ExtraText">
 
     <!-- EXISTENCIAS ACTUALES DE TODOS LOS PRODUCTOS -->
 
-    <!-- GANANCIA POR VENTAS -->
-
-    <!-- TOTAL DE VENTAS MENSUAL -->
-
-    <!-- FILTROS APLICABLES PARA DÍA/SEMANA -->
-
-    <Spinner
-        android:id="@+id/spinner_filtros"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:entries="@array/filtrar_options"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView_filtros"
-        app:layout_constraintWidth_percent="0.8" />
-
-    <EditText
-        android:id="@+id/input_ganancia"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:hint="Ver ganancia por ventas"
-        android:inputType="none"
-        app:layout_constraintBottom_toTopOf="@id/textView_total_ventas"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView_ganancia"
-        app:layout_constraintWidth_percent="0.8" />
-
-    <TextView
-        android:id="@+id/textView_total_ventas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Total de Ventas Mensual"
-        app:layout_constraintBottom_toTopOf="@id/input_total_ventas"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/input_ganancia" />
-
-    <EditText
-        android:id="@+id/input_total_ventas"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:hint="Ver total de ventas mensual"
-        android:inputType="none"
-        app:layout_constraintBottom_toTopOf="@id/textView_filtros"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView_total_ventas"
-        app:layout_constraintWidth_percent="0.8" />
-
-    <TextView
-        android:id="@+id/textView_ganancia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ganancia por Ventas"
-        app:layout_constraintBottom_toTopOf="@id/input_ganancia"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/input_existencias" />
-
-    <TextView
-        android:id="@+id/textView_filtros"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Filtros Aplicables para Día/Semana"
-        app:layout_constraintBottom_toTopOf="@id/spinner_filtros"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/input_total_ventas" />
-
-    <EditText
-        android:id="@+id/input_existencias"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:hint="Ver existencias actuales"
-        android:inputType="none"
-        app:layout_constraintBottom_toTopOf="@id/textView_ganancia"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView_existencias"
-        app:layout_constraintWidth_percent="0.8" />
+    <!-- Campo de Entrada para Existencias -->
 
     <TextView
         android:id="@+id/textView_existencias"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Existencias Actuales de Todos los Productos"
-        app:layout_constraintBottom_toTopOf="@id/input_existencias"
+        android:layout_marginTop="45dp"
+        android:text="Ganancia bruta"
+        android:textColor="@color/dark_blue"
+        android:textSize="25sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_total_ventas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ventas Realizadas"
+        android:textColor="@color/dark_blue"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="380dp" />
+
+    <TextView
+        android:id="@+id/input_ganancia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="s/1500"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/darkblue"
+        android:textSize="50sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView_ganancia"
+        tools:layout_editor_absoluteX="126dp" />
+
+    <TextView
+        android:id="@+id/input_ventas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="225"
+        android:textColor="@color/darkblue"
+        android:textSize="50sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView_total_ventas"
+        tools:layout_editor_absoluteX="163dp" />
+
+    <TextView
+        android:id="@+id/textView_ganancia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Ganancia neta"
+        android:textColor="@color/dark_blue"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/input_existencias"
+        tools:layout_editor_absoluteX="125dp" />
+
+    <TextView
+        android:id="@+id/input_existencias"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="s/3200"
+        android:textColor="@color/darkblue"
+        android:textSize="50sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView_existencias"
+        tools:layout_editor_absoluteX="126dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
