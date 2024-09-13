@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.slideshow.PedidosAdmin">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <!-- NOMBRE DEL VENDEDOR -->
+        <TextView
+            android:id="@+id/textView_vendedor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre del Vendedor"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/input_vendedor"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el nombre del vendedor"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1" />
+
+        <!-- APELLIDO DEL CLIENTE -->
+        <TextView
+            android:id="@+id/textView_apellido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apellido del Cliente"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/input_apellido"
+
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el apellido del cliente"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1" />
+
+        <!-- NOMBRE DEL CLIENTE -->
+        <TextView
+            android:id="@+id/textView_nombre_cliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre del Cliente"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/input_nombre_cliente"
+
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el nombre del cliente"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1" />
+
+        <!-- DNI DEL CLIENTE -->
+        <TextView
+            android:id="@+id/textView_dni_cliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DNI del Cliente"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/input_dni_cliente"
+
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el DNI del cliente"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1" />
+
+        <!-- CANTIDAD DE PRODUCTOS -->
+        <TextView
+            android:id="@+id/textView_cantidad_productos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cantidad de Productos"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/input_cantidad_productos"
+
+            android:layout_height="wrap_content"
+            android:hint="Ingrese la cantidad de productos"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1" />
+
+        <!-- TOTAL -->
+        <TextView
+            android:id="@+id/textView_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/input_total"
+
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el total"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1" />
+
+        <!-- FECHA Y HORA -->
+        <TextView
+            android:id="@+id/textView_fecha_hora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha y Hora"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/input_fecha_hora"
+
+            android:layout_height="wrap_content"
+            android:hint="Ingrese la fecha y hora"
+            android:inputType="datetime"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1" />
+
+        <!-- ESTADO DE ENTREGA -->
+        <TextView
+            android:id="@+id/textView_estado_entrega"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estado de Entrega"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/input_estado_entrega"
+
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el estado de entrega"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1" />
+
+        <!-- BOTÓN CREAR PEDIDO -->
+        <Button
+            android:id="@+id/btn_crear_pedido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crear Pedido"
+            android:layout_marginTop="24dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

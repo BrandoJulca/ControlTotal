@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.slideshow.InfoAdmin">
+
+    <!-- EXISTENCIAS ACTUALES DE TODOS LOS PRODUCTOS -->
+
+    <!-- GANANCIA POR VENTAS -->
+
+    <!-- TOTAL DE VENTAS MENSUAL -->
+
+    <!-- FILTROS APLICABLES PARA DÍA/SEMANA -->
+
+    <Spinner
+        android:id="@+id/spinner_filtros"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:entries="@array/filtrar_options"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_filtros"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <EditText
+        android:id="@+id/input_ganancia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Ver ganancia por ventas"
+        android:inputType="none"
+        app:layout_constraintBottom_toTopOf="@id/textView_total_ventas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_ganancia"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <TextView
+        android:id="@+id/textView_total_ventas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total de Ventas Mensual"
+        app:layout_constraintBottom_toTopOf="@id/input_total_ventas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_ganancia" />
+
+    <EditText
+        android:id="@+id/input_total_ventas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Ver total de ventas mensual"
+        android:inputType="none"
+        app:layout_constraintBottom_toTopOf="@id/textView_filtros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_total_ventas"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <TextView
+        android:id="@+id/textView_ganancia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ganancia por Ventas"
+        app:layout_constraintBottom_toTopOf="@id/input_ganancia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_existencias" />
+
+    <TextView
+        android:id="@+id/textView_filtros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filtros Aplicables para Día/Semana"
+        app:layout_constraintBottom_toTopOf="@id/spinner_filtros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_total_ventas" />
+
+    <EditText
+        android:id="@+id/input_existencias"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Ver existencias actuales"
+        android:inputType="none"
+        app:layout_constraintBottom_toTopOf="@id/textView_ganancia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_existencias"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <TextView
+        android:id="@+id/textView_existencias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Existencias Actuales de Todos los Productos"
+        app:layout_constraintBottom_toTopOf="@id/input_existencias"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
